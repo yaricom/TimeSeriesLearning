@@ -204,7 +204,7 @@ The 'src/score_validator.py' may be used to calculate score over test data saple
 
 The 'src/utils/train_validate_splitter.py' can be used in order to generate train/validate data samples for training from 'data/trainng.csv' file
 
-### Dependencies:
+## Dependencies:
 * [Numpy](http://www.numpy.org)
 * [Pandas](http://pandas.pydata.org)
 * [scikit-learn](http://scikit-learn.org/stable/) 
