@@ -1,5 +1,5 @@
 # Time Series Learning
-The project aimed to implement Deep NN / RNN based solution in order to develop flexible methods that are able to adaptively fillin, backfill, and predict time-series using a large number of heterogeneous training datasets.
+This project is intended to implement Deep NN / RNN based solution in order to develop flexible methods that are able to adaptively fillin, backfill, and predict time-series using a large number of heterogeneous training datasets.
 
 The perfect solution must at least exceed performance of plain vanila Random Forest Regressor which considered as scoring baseline.
 
