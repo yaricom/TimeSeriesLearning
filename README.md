@@ -193,3 +193,32 @@ validation baseline - Random Forest Regressor
 
 Test score: 98.80 (vp_tree_10_08_2016.csv)
 ```
+## Directory structure and running
+### The directories:
+* 'data' directory contains training / testing data samples
+* 'src' directory has source files
+
+### The source files:
+The main runners are 'src/deep_learning_runner.py' and 'src/vanila_rnn.py' for starting 'Deep NN' and 'RNN' correspondingly.
+The 'src/score_validator.py' may be used to calculate score over test data saples run results.
+
+The 'src/utils/train_validate_splitter.py' can be used in order to generate train/validate data samples for training from 'data/trainng.csv' file
+
+### Dependencies:
+* [Numpy](http://www.numpy.org)
+* [Pandas](http://pandas.pydata.org)
+* [scikit-learn](http://scikit-learn.org/stable/) 
+
+## References
+* [Stanford CS class CS231n](http://cs231n.github.io)
+* [UFLDL Deep Learning Tutorial](http://ufldl.stanford.edu/tutorial/)
+* [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+* [Recurrent Neural Networks](http://christianherta.de/lehre/dataScience/machineLearning/neuralNetworks/recurrentNeuralNetworks.php)
+* [Generating Sequences With Recurrent Neural Networks arXiv:1308.0850](http://arxiv.org/abs/1308.0850v5)
+* [Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling arXiv:1412.3555](http://arxiv.org/abs/1412.3555v1)
+* [Adam: A Method for Stochastic Optimization arXiv:1412.6980](http://arxiv.org/abs/1412.6980v8)
+* [Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification arXiv:1502.01852](http://arxiv.org/abs/1502.01852v1)
+* [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift arXiv:1502.03167](http://arxiv.org/abs/1502.03167v3)
+* [RMSProp and equilibrated adaptive learning rates for non-convex optimization arXiv:1502.04390](http://arxiv.org/abs/1502.04390v1)
+* [DRAW: A Recurrent Neural Network For Image Generation arXiv:1502.04623](http://arxiv.org/abs/1502.04623v2)
+* [Directly Modeling Missing Data in Sequences with RNNs: Improved Classification of Clinical Time Series arXiv:1606.04130](http://arxiv.org/abs/1606.04130v1)
