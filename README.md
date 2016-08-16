@@ -204,6 +204,39 @@ The 'src/score_validator.py' may be used to calculate score over test data saple
 
 The 'src/utils/train_validate_splitter.py' can be used in order to generate train/validate data samples for training from 'data/trainng.csv' file
 
+### The data files
+The training and test data contains several columns:
+```
+----------+--------------------+------------+-------------------------------------------------------
+ Column#s | Column Name(s)     | Data Type  | Description
+----------+--------------------+------------+-------------------------------------------------------
+ 1-3      | y1, y2, y2         | Float      | The three dependent variables to be predicted in test
+----------+--------------------+------------+-------------------------------------------------------
+ 4        | STUDYID            | Integer    | 
+----------+--------------------+------------+-------------------------------------------------------
+ 5        | SITEID             | Integer    | 
+----------+--------------------+------------+-------------------------------------------------------
+ 6        | COUNTRY            | Integer    | 
+----------+--------------------+------------+-------------------------------------------------------
+ 7        | SUBJID             | Integer    | 
+----------+--------------------+------------+-------------------------------------------------------
+ 8        | TIMEVAR1           | Float      | 
+----------+--------------------+------------+-------------------------------------------------------
+ 9        | TIMEVAR2           | Float      | 
+----------+--------------------+------------+-------------------------------------------------------
+ 10-39    | COVAR_CONTINUOUS_n | Float      | (30 fields) 
+----------+--------------------+------------+-------------------------------------------------------
+ 40-47    | COVAR_ORDINAL_n    | Integer    | (8 fields) 
+----------+--------------------+------------+-------------------------------------------------------
+ 48-55    | COVAR_NOMINAL_n    | Char       | (8 fields) 
+----------+--------------------+------------+-------------------------------------------------------
+ 56-58    | y1, y2, y3 missing | True/False | (3 fields) does the value exist in ground truth
+----------+--------------------+------------+-------------------------------------------------------
+```
+The combination of STUDYID and SUBJID is sufficient to uniquely identify a specific individual. Adding TIMEVAR1 is sufficient to identify to uniquely identify each row.
+
+The last three columns contain the values “True” or “False” indicate whether y1, y2, or y3 is missing from the ground truth data.
+
 ## Dependencies:
 * [Numpy](http://www.numpy.org)
 * [Pandas](http://pandas.pydata.org)
